@@ -1,0 +1,98 @@
+/* Set unique color scheme */
+:root {
+    --primary-color: #FF4081; /* Pink */
+    --secondary-color: #03A9F4; /* Blue */
+    --text-color: #333333;
+  }
+  
+  /* Apply custom typography */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Style the touch typing container */
+  .touch-typing-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F5F5F5; /* Light Gray */
+    border: 2px solid var(--secondary-color); /* Blue */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the typing box */
+  .typing-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #FFFFFF; /* White */
+    color: var(--text-color);
+    border: 2px solid var(--primary-color); /* Pink */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .typing-box:focus {
+    border-color: var(--secondary-color); /* Blue */
+  }
+  
+  /* Style the next keys display */
+  .next-keys {
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--primary-color); /* Pink */
+  }
+  
+  /* Style the results display */
+  .results {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  
+  .results p {
+    margin: 10px 0;
+  }
+  
+  /* Style the buttons */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--secondary-color); /* Blue */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0288D1; /* Darker Blue */
+  }
+  
+  /* Add background gradient */
+  .touch-typing-container {
+    background-image: linear-gradient(to right, #FF4081, #03A9F4);
+  }
+  
+  /* Add subtle animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease;
+  }
+  

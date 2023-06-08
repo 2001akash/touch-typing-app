@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles.css'; // Import the style.css file
 
-function App() {
+import TypingBox from './TypingBox';
+import NextKeys from './NextKeys';
+import Results from './Results';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="touch-typing-container"> {/* Apply the touch-typing-container class */}
+      <TypingBox />
+      <NextKeys />
+      <Results />
     </div>
   );
-}
+};
 
 export default App;
